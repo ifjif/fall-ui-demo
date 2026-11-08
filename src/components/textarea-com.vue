@@ -16,12 +16,27 @@
         <fl-button type="primary">发送</fl-button>
       </template>
     </fl-textarea>
+    <fl-textarea>
+      <template #prefix>
+        <fl-scrollbar wheel="x">
+          <p>
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+          </p>
+        </fl-scrollbar>
+      </template>
+    </fl-textarea>
     <h3 id="fl-textarea-attrs">属性</h3>
-    <fl-table :data="data" :columns="columns"></fl-table>
+    <fl-table style="height:500px;" :data="data" :columns="columns"></fl-table>
     <h3 id="fl-textarea-models">model</h3>
-    <fl-table :data="modelData" :columns="columns"></fl-table>
+    <fl-table style="height:200px;" :data="modelData" :columns="columns"></fl-table>
     <h3 id="fl-textarea-slots">插槽</h3>
-    <fl-table :data="slotData" :columns="slotColumns"></fl-table>
+    <fl-table style="height:200px;" :data="slotData" :columns="slotColumns"></fl-table>
   </ComponentLayout>
 </template>
 
